@@ -1,0 +1,806 @@
+@import 'config';
+
+// CUSTOM USER STYLES & IMPORTS
+
+body {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 5px 0;
+}
+
+.center-title {
+    text-align: center;
+    width: 100%;
+}
+
+.visible {
+    opacity: 1 !important;
+}
+
+.skip__cause {
+    opacity: 0;
+}
+
+.edit__notes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #9ea4aa;
+    padding: 5px 0 15px 0;
+}
+
+.edit__notes p {
+    margin: 0;
+}
+
+.edit__input {
+    max-width: 60px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.edit__note {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.student__bold {
+    font-weight: 900;
+    margin: 10px 0 4px;
+}
+
+.pred_neud {
+    margin: 3px 0 3px 20px;
+}
+
+.edit__note__digit {
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid rgb(78, 78, 78);
+    border-radius: 3px;
+    padding: 2px 4px;
+    margin-left: 15px;
+}
+
+.edit__name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h5 span {
+    font-weight: bold;
+}
+
+.absolut__text,
+.kach__text {
+    font-weight: bold;
+}
+
+.title__neud {
+    border-bottom: 2px solid rgb(221, 0, 0);
+}
+
+.title__45 {
+    border-bottom: 2px solid rgb(0, 114, 28);
+}
+
+.title__5 {
+    border-bottom: 2px solid rgb(0, 177, 38);
+}
+
+
+.add__predmet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add__predmet p {
+    margin: 0;
+}
+
+.add__predmet select {
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.student__hor {
+    margin-bottom: 5px;
+}
+
+.qw {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h3 {
+    margin: 0;
+}
+
+.logo__icon {
+    font-size: 32px;
+    margin: 0 10px 0 0;
+}
+
+
+.header__exit {
+    color: #4B80EB;
+    font-size: 26px;
+    margin: 0 0 0 10px;
+}
+
+.main__login,
+.main__singup {
+    font-size: 32px;
+    margin: 5px 10px 5px 0;
+    font-weight: bold;
+}
+
+.main__login:hover,
+.main__singup:hover {
+    text-decoration: none;
+    color: rgb(0, 35, 150);
+}
+
+.singin__wrap {
+    padding: 40px 0;
+}
+
+.singin__form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.singin__input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.singin__button {
+    border: none;
+    margin: 10px 0;
+    padding: 5px;
+    background-color: #0056b3;
+    color: #fff;
+    font-weight: bold;
+}
+
+.singin__button:hover {
+    background-color: #022852;
+}
+
+
+.login__form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.login__input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.login__button {
+    border: none;
+    margin: 10px 0;
+    padding: 5px 10px;
+    background-color: #0056b3;
+    color: #fff;
+    font-weight: bold;
+}
+
+.login__button:hover {
+    background-color: #022852;
+}
+
+.login__wrap {
+    padding: 30px 0;
+}
+
+.opacity {
+    opacity: 1 !important;
+}
+
+.underline {
+    border-bottom: 2px solid #999;
+}
+
+.table__head {
+    text-align: center !important;
+    vertical-align: middle !important;
+    width: min-content;
+    min-width: 40px;
+}
+
+.table td:nth-child(2) {
+    text-align: center;
+}
+
+.table__predmets {
+    text-align: left !important;
+}
+
+.add__student__title,
+.add__predmet__title {
+    font-weight: 800;
+}
+
+.base__group__wrap {
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.base__group__content {
+    padding-bottom: 30px;
+}
+
+.base__grop__title {
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(48, 48, 48);
+    color: #fff;
+}
+
+.footer__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+        margin: 0;
+    }
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.select__predmet {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.add_student_brs331 {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.add__student__brs {
+    display: flex;
+    align-items: center;
+
+    p {
+        font-weight: 600;
+        margin: 0 10px 0 0;
+    }
+}
+
+.edit__brs {
+    display: flex;
+    align-items: center;
+
+    p {
+        font-weight: 600;
+        margin: 0 5px 0 0;
+        width: 100%;
+    }
+
+    input {
+        margin: 0 7px;
+        width: 100px;
+    }
+}
+
+
+a.support:hover .tip {
+    display: block;
+
+}
+
+.support {
+    display: inline-block;
+    position: relative;
+    /*обязательное параметр*/
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.tip,
+span.support::before {
+    display: none;
+    position: absolute;
+    z-index: 9998;
+    top: 0;
+    left: 100%;
+    background: #EDEDED;
+    text-align: left;
+    color: #000;
+    cursor: default;
+    padding: 5px;
+    margin: -15px 0 0 10px;
+    /*регулирует положение, значения зависят от применяемой конструкции*/
+    width: 200px;
+    min-height: 50px;
+    height: auto;
+    transition: all 0.5s;
+}
+
+.main_img {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+
+.btn-success {
+    color: #fff;
+    background-color: #5157BD;
+    border-color: #394FA8;
+
+    &:hover {
+        background-color: #394FA8;
+    }
+}
+
+.btn-success:not(:disabled):not(.disabled).active,
+.btn-success:not(:disabled):not(.disabled):active,
+.show>.btn-success.dropdown-toggle {
+    color: #fff;
+    background-color: #5157BD;
+    border-color: #394FA8;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #5157BD;
+    border-color: #394FA8;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #6a71ec;
+    border-color: #3947A8;
+}
+
+.form__predmet__brs {
+    display: flex;
+}
+
+.hours__block {
+    padding: 0 0 0 40px;
+
+    input {
+        font-weight: 600;
+        font-size: 16px;
+        margin: 0 10px 0 0;
+    }
+}
+
+.visited__warning__hidden {
+    display: none;
+}
+
+.warning {
+    color: red;
+    display: block;
+}
+
+.final_grade {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.summ__note1,
+.summ__note2 {
+    font-weight: 600;
+}
+
+.red {
+    color: rgb(248, 74, 74);
+}
+
+.add__predmet__controle {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 5px 3px;
+}
+
+.select__students {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 3px;
+}
+
+// Копирование ссылки в буфер
+a.sup:hover .tip {
+    display: block;
+
+}
+
+.sup {
+    display: inline-block;
+    position: relative;
+    /*обязательное параметр*/
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 0 0 15px;
+
+}
+
+.tip,
+span.sup::before {
+    display: none;
+    position: absolute;
+    z-index: 9998;
+    top: -30px;
+    left: -30px;
+    background: #EDEDED;
+    text-align: center;
+    color: #000;
+    cursor: default;
+    padding: 5px;
+    margin: -15px 0 0 10px;
+    /*регулирует положение, значения зависят от применяемой конструкции*/
+    width: 200px;
+    min-height: 30px;
+    height: auto;
+    transition: all 0.5s;
+    border-radius: 5px;
+    border: solid 1px #161a1f;
+}
+
+.copy__link__title {
+    margin: 0 15px 0 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.copy__link__block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.table {
+    tbody {
+        tr {
+            &:hover {
+                -webkit-box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.2);
+                -moz-box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.2);
+                box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.2);
+                background-color: #f7f7f7;
+            }
+
+            transition: all 0.2s;
+        }
+    }
+}
+
+.block_pred_neud {
+    padding-left: 10px;
+}
+
+table {
+    width: 100%;
+
+    .predmet__title {
+        margin: 0;
+        writing-mode: vertical-rl;
+        font-weight: 100;
+        text-align: end;
+    }
+}
+
+.predmet__title {
+    margin: 0;
+}
+
+.button__wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.page__title {
+    margin-top: 20px;
+}
+
+.smoking_name,
+.dress_code_name,
+.food_name,
+.stable_food_name,
+.skipping_name,
+.rules_name {
+    display: block;
+    margin: 4px 0;
+    padding: 2px;
+}
+
+.skips__text {
+    font-weight: 900;
+}
+
+.number__skip_u {
+    background-color: rgb(184, 255, 184) !important;
+}
+
+.number__skip_n {
+    background-color: rgb(255, 218, 218) !important;
+}
+
+.table__skips {
+    overflow-x: scroll !important;
+    display: block;
+}
+
+.all_skips_student {
+    font-size: 12px;
+    padding: 1px !important;
+}
+
+.student__skip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #343a40;
+    padding: 5px 0 8px;
+}
+
+.edit_skip_u,
+.skip_u {
+    background-color: rgb(210, 255, 223);
+}
+
+.edit_skip_n,
+.skip_n {
+    background-color: rgb(253, 241, 241);
+}
+
+.label__u {
+    font-weight: 600;
+    color: rgb(14, 122, 0);
+}
+
+.label__n {
+    font-weight: 600;
+    color: rgb(173, 3, 3);
+    padding-left: 5px;
+}
+
+.date__row {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.alarm__date {
+    color: red;
+    margin: 5px 0 0 0;
+    text-align: right;
+}
+
+.date__enter {
+    margin: 0;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.student__skips__name {
+    margin: 0;
+}
+
+.start-info {
+    text-align: center;
+    padding: 20px;
+}
+
+.button__monate {
+    padding: 5px 8px;
+}
+
+.green__button {
+    background-color: rgb(28, 199, 28);
+}
+
+.table td {
+    border: 1px solid;
+    vertical-align: middle;
+    padding: 5px;
+    text-align: center;
+}
+
+table {
+    thead {
+        text-align: center;
+        background-color: #343a40;
+        color: #fff;
+    }
+}
+
+.table {
+    thead {
+        td {
+            background-color: #343a40;
+            color: #fff;
+            border-color: darkgrey;
+        }
+
+        th {
+            font-weight: 200;
+
+        }
+    }
+}
+
+.table__students {
+    text-align: left !important;
+}
+
+.close {
+    border: none;
+    background: none;
+    font-size: 24px;
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        border: 1px solid #343a40;
+        transition: all 0.3s;
+        -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+        background-color: #f7f7f7;
+    }
+
+    span {
+        line-height: 24px;
+    }
+}
+
+
+.print__block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.print__page {
+    font-size: 12px;
+    padding: 2px 4px;
+}
+
+@media print {
+
+    /* Стиль для печати */
+    .pred-table {
+        max-width: 44px;
+        height: 450px;
+    }
+
+    .topmenu,
+    .copy__link__block,
+    .print__block,
+    .btn-success {
+        display: none;
+    }
+
+    .table__report {
+        th:last-child {
+            display: none;
+        }
+
+        td:last-child {
+            display: none;
+        }
+    }
+
+    table {
+        page-break-after: auto
+    }
+
+    tr {
+        page-break-inside: avoid;
+        page-break-after: auto
+    }
+
+    td {
+        page-break-inside: avoid;
+        page-break-after: auto
+    }
+
+    thead {
+        display: table-header-group
+    }
+
+    tfoot {
+        display: table-footer-group
+    }
+}
+
+@page {
+    margin: 0.5cm 0.5cm 0.5cm 0.5cm;
+    padding: 0.5cm 0.5cm 0.5cm 0.5cm;
+    page-break-after: always;
+    /* Отступы для всех левых страниц */
+}
+
+
+
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 360px;
+    max-width: 1000px;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+.highcharts-credits {
+    display: none !important;
+}
