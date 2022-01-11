@@ -533,9 +533,12 @@ h2 {
 }
 
 .servises {
+  padding: 30px 0;
+
   h2 {
     text-align: center;
   }
+
   .subtitle {
     text-align: center;
   }
@@ -543,13 +546,46 @@ h2 {
 
 .servises__wrapper {
   background-color: rgb(219, 219, 219);
+  padding: 30px 0;
 }
 
 .servises__space {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
+
 .servises__midlle {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.servises__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.servises__block {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  p {
+    display: block;
+    background-color: #74b330;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 220px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 20px;
+    color: #fff;
+    padding: 0 10px;
+  }
 }
