@@ -462,6 +462,10 @@ h2 {
 }
 
 .steps {
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0 0;
+
   h2 {
     text-align: center;
   }
@@ -483,6 +487,7 @@ h2 {
   position: relative;
   max-width: 27%;
   padding: 20px 30px 0 0;
+
   &::before {
     content: '';
     display: block;
@@ -491,7 +496,7 @@ h2 {
     width: 70%;
     height: 3px;
     right: 30px;
-    top: 25px;
+    top: 30px;
   }
 }
 
@@ -506,4 +511,45 @@ h2 {
   font-weight: 600;
   margin-bottom: 0;
   line-height: 30px;
+}
+
+.decor {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 655px;
+  z-index: 2;
+}
+
+.decor-cirkle {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -160px;
+  right: -260px;
+  background-color: rgb(219, 219, 219);
+  z-index: 1;
+}
+
+.servises {
+  h2 {
+    text-align: center;
+  }
+  .subtitle {
+    text-align: center;
+  }
+}
+
+.servises__wrapper {
+  background-color: rgb(219, 219, 219);
+}
+
+.servises__space {
+  display: flex;
+  justify-content: space-around;
+}
+.servises__midlle {
+  display: flex;
+  justify-content: space-between;
 }
