@@ -1,7 +1,7 @@
 // VARIABLES & PATHS
 
 let preprocessor = 'scss', // Preprocessor (sass, scss, less, styl)
-	fileswatch = 'html,php,txt,json,md,woff2', // List of files extensions for watching & hard reload (comma separated)
+	fileswatch = 'html,htm,txt,json,md,woff2', // List of files extensions for watching & hard reload (comma separated)
 	imageswatch = 'jpg,jpeg,png,webp,svg', // List of images extensions for watching & compression (comma separated)
 	baseDir = 'app', // Base directory path without «/» at the end
 	online = true; // If «false» - Browsersync will work offline without internet connection
@@ -10,14 +10,14 @@ let paths = {
 
 	scripts: {
 		src: [
-			//'node_modules/jquery/dist/jquery.min.js', // npm vendor example (npm i --save-dev jquery)
-			baseDir + '/js/app.js' // app.js. Always at the end
+			'node_modules/jquery/dist/jquery.min.js', // npm vendor example (npm i --save-dev jquery)
+			baseDir + '/_js/app.js' // app.js. Always at the end
 		],
 		dest: baseDir + '/js',
 	},
 
 	styles: {
-		src: baseDir + '/' + preprocessor + '/*.scss',
+		src: baseDir + '/' + preprocessor + '/main.*',
 		dest: baseDir + '/css',
 	},
 
@@ -64,7 +64,9 @@ const plumber = require('gulp-plumber');
 
 function browsersync() {
 	browserSync.init({
-		proxy: 'regs',
+		server: {
+			baseDir: baseDir + '/'
+		},
 		notify: false,
 		online: online
 	})

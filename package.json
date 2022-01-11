@@ -22,14 +22,10 @@
 		"gulp-rsync": "0.0.8",
 		"gulp-sass": "^4.1.0",
 		"gulp-stylus": "^2.7.0",
-		"gulp-uglify-es": "^2.0.0"
+		"gulp-uglify-es": "^2.0.0",
+		"jquery": "^3.5.1"
 	},
 	"dependencies": {
-		"cjs": "0.0.11",
-		"g": "^2.0.1",
-		"gulp-install": "^1.1.0",
-		"gulp-plumber": "^1.2.1",
-		"gulp-update-modul": "^1.5.5",
-		"sass": "^1.38.2"
+		"gulp-plumber": "^1.2.1"
 	}
 }
