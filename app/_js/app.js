@@ -1,31 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-	const swiper = new Swiper('.swiper', {
-		speed: 400,
-		spaceBetween: 40,
-		// Navigation arrows
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		slidesPerView: 3,
-	});
-
-
-
-	const swiper2 = new Swiper(".model__swiper-nav", {
-		spaceBetween: 10,
-		slidesPerView: 4,
-		freeMode: true,
-		watchSlidesProgress: true,
-	});
-	const modelSwiper = new Swiper('.model__swiper', {
-		speed: 400,
-		spaceBetween: 40,
-		slidesPerView: 1,
-		thumbs: {
-			swiper: swiper2,
-		}
-	});
+	$('a[href*="#"]').on("click", function (e) {
+		var a = $(this);
+		return $("html, body").stop().animate({
+			scrollTop: $(a.attr("href")).offset().top - 30
+		}, 600), e.preventDefault(), !1
+	}), $(window).scroll(function () {
+		50 < $(window).scrollTop() ? $("header").addClass("header-scrol") : $("header").removeClass("header-scrol")
+	})
 
 });
