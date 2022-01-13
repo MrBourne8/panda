@@ -17,7 +17,8 @@ let paths = {
 	},
 
 	styles: {
-		src: baseDir + '/' + preprocessor + '/main.*',
+		// src: baseDir + '/' + preprocessor + '/main.*',
+		src: baseDir + '/' + preprocessor + '/*.scss',
 		dest: baseDir + '/css',
 	},
 
